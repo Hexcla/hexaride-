@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #f0f4ff, #d4e4ff);
+    font-family: 'Arial', sans-serif;
+}
+
+.login-container {
+    text-align: center;
+}
+
+.title {
+    color: rgb(118, 108, 214);
+    font-size: 36px;
+    margin-bottom: 30px;
+    animation: slideIn 1.5s ease;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid lightblue;
+    background: transparent;
+    outline: none;
+    color: #333;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: all 0.3s;
+}
+
+.input-group input:focus + label, 
+.input-group input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 12px;
+    color: lightblue;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: lightblue;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #3a8dd9;
+}
+
+.extra-options {
+    margin-top: 20px;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 15px;
+    color: #666;
+    text-decoration: none;
+}
+
+.signup-google .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-google .google-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

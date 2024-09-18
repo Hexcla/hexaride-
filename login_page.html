@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexaware Rideshare - Login</title>
+    <link rel="stylesheet" href="login_page.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="title">HEXAWARE</h1>
+        <form class="login-box" id="loginForm">
+            <h2>Login</h2>
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email">Enter Email</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" required>
+                <label for="password">Enter Password</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">Remember Me</label>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <div class="extra-options">
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <div class="signup-google">
+                    <button class="google-btn">
+                        <img src="images/google.png" alt="Google Icon">
+                        login with Google
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="login_page.js"></script>
+</body>
+</html>

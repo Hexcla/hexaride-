@@ -1,0 +1,143 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start content towards the top */
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    padding-top: 60px; /* Space for navigation bar */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #0000FF;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Make it dynamic */
+    top: 0;
+    left: 0;
+    z-index: 100; /* Ensure it stays above other elements */
+}
+
+.branding {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 40px; /* Move History and Profile Icon to the right */
+}
+
+.nav-link {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.profile-icon {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+/* Options Section */
+.options-container {
+    text-align: center;
+    margin: 30px 0; /* Adjusted to reduce margin */
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option {
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth animation */
+}
+
+.icon {
+    width: 80px; /* Smaller size for icons */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Reduced margin */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.icon-label {
+    font-size: 1rem; /* Adjusted font size */
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Form Container Styling */
+.form-container {
+    text-align: center;
+    margin: 20px auto; /* Reduced margin to move forms upward */
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.map-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.action-button {
+    background-color: #0000FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #000099;
+}
+
+/* Animation for shrinking and expanding */
+.shrink {
+    transform: scale(0.7);
+    opacity: 0;
+}
+
+.grow {
+    transform: scale(1.1);
+}

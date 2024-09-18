@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Profile</h1>
+        <form class="profile-card" action="{% url 'profile_update' %}" method="post">
+            
+            <div class="profile-item">
+                <img src="images/user (1).png" alt="User Icon" class="icon">
+                <span>Name:</span>
+                <input type="text" id="user-name" name="name" value="John Doe" disabled>
+                <button type="button" class="edit-btn" onclick="enableEdit('user-name')">Edit</button>
+            </div>
+            <div class="profile-item">
+                <img src="images/email.png" alt="Email Icon" class="icon">
+                <span>Email:</span>
+                <input type="text" id="user-email" name="email" value="john.doe@example.com" disabled>
+                <button type="button" class="edit-btn" onclick="enableEdit('user-email')">Edit</button>
+            </div>
+            <div class="profile-item">
+                <img src="images/gender-fluid.png" alt="Gender Icon" class="icon">
+                <span>Gender:</span>
+                <input type="text" id="user-gender" name="gender" value="Male" disabled>
+                <button type="button" class="edit-btn" onclick="enableEdit('user-gender')">Edit</button>
+            </div>
+            <div class="profile-item">
+                <img src="images/phone.png" alt="Phone Icon" class="icon">
+                <span>Phone Number:</span>
+                <input type="text" id="user-phone" name="phone" value="123-456-7890" disabled>
+                <button type="button" class="edit-btn" onclick="enableEdit('user-phone')">Edit</button>
+            </div>
+            <div class="submit-btn-container">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>
